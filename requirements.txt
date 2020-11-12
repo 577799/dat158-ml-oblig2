@@ -1,0 +1,5 @@
+flask
+matplotlib
+tensorflow
+keras
+numpy
