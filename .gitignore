@@ -1,2 +1,9 @@
 
 *.docx
+ASL Recognition with Deep Learning/.ipynb_checkpoints/notebook-checkpoint.ipynb
+ASL Recognition with Deep Learning/datasets/__pycache__/sign_language.cpython-38.pyc
+ASL Recognition with Deep Learning/datasets/A.zip
+ASL Recognition with Deep Learning/datasets/B.zip
+ASL Recognition with Deep Learning/datasets/C.zip
+ASL Recognition with Deep Learning/datasets/sign_language.py
+ASL Recognition with Deep Learning/notebook.ipynb
