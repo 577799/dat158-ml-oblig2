@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect
 import os.path
+import predict as pred
 #from werkzeug import secure_filename
 
 UPLOAD_FOLDER = 'nedlastninger'
@@ -27,6 +28,11 @@ def upload_files():
 def uploaded_file(filename):
     return send_from_directory(app.config['UPLOAD_FOLDER'],
                                filename)
+
+@app.route('/predict', methods=['POST'])
+def predict():
+
+   return "this is a " #+ pred.predict()                            
 
 
 if __name__ == '__main__':
