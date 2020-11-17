@@ -16,7 +16,7 @@ def prediction():
     #data = mpimg.imread('/nedlastninger')
     ##imgplot = 
     # plt.imshow(img)
-    new_image = plt.imread("bird.jpg")
+    new_image = plt.imread("nedlastninger/image.jpg")
     resized_image = resize(new_image, (32,32,3))
     predictions = model.predict(np.array([resized_image]))
 
@@ -34,7 +34,7 @@ def prediction():
     classification = ['airplane', 'automobile', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck']
 
     for i in range(5):
-        str1 = (classification[list_index[i]], ':', round(predictions[0][list_index[i]] * 100, 2), '%')
+        str1 = (classification[list_index[i]], ':', round(predictions[0][list_index[i]] * 100, 2), "%")
         list_predictions[i] = str1
         #print(classification[list_index[i]], ':', round(predictions[0][list_index[i]] * 100, 2), '%')
 

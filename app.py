@@ -11,7 +11,7 @@ ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
 
 @app.route('/')
 def index():
-    return render_template("index.html")
+    return render_template("upload.html")
 
 @app.route('/upload')
 def upload_file():
@@ -22,8 +22,8 @@ def upload_files():
    if request.method == 'POST':
       f = request.files['file']
      # f.save(f.filename) # denne fungerer men lagrer i feil mappe
-      f.save(os.path.join(app.config['UPLOAD_FOLDER'], f.filename)) #fjern denne om nedlasting ikke fungerer
-      return 'file uploaded successfully'
+      f.save(os.path.join(app.config['UPLOAD_FOLDER'], "image.jpg")) #fjern denne om nedlasting ikke fungerer
+      return redirect('/predict')
 		
 @app.route('/uploads/<filename>')
 def uploaded_file(filename):
