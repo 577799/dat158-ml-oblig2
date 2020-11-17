@@ -7,3 +7,5 @@ ASL Recognition with Deep Learning/datasets/B.zip
 ASL Recognition with Deep Learning/datasets/C.zip
 ASL Recognition with Deep Learning/datasets/sign_language.py
 ASL Recognition with Deep Learning/notebook.ipynb
+*.pyc
+*.pyc
