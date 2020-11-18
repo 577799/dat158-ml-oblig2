@@ -8,18 +8,20 @@
 <div class="input-group mb-3">
     <div class="input-group-prepend">
       <input type = "file" name = "file" />
-      <input type = "submit"/>
+      <input  type = "submit"/>
     </div>  
   </div>  
 </form>
 </div>
 <div>
   
-  <img src="{{imagesrc}}">
+  
 </div>
 
 <form action = "/predict" method = "get">
   
   <h4>{{ result }}</h4>
+  <img src="{{imagesrc}}">
   </form>
+  
 {% endblock %}
