@@ -33,7 +33,7 @@ def uploaded_file(filename):
 @app.route('/predict', methods=['GET', 'POST'])
 def predicting():
   asdf = pred.prediction()
-  return render_template("upload.html", result=asdf, imagesrc="nedlastninger/image.jpg")
+  return render_template("upload.html", result=asdf, imagesrc="static/image.jpg")
 
 if __name__ == '__main__':
    app.run(debug = True)
