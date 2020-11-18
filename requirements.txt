@@ -2,6 +2,6 @@ flask
 matplotlib
 tensorflow
 keras
-numpy
+numpy ==19.9.0
 scikit-image
 sklearn
