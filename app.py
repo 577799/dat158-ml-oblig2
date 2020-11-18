@@ -4,7 +4,7 @@ import os.path
 import predict as pred
 #from werkzeug import secure_filename
 
-UPLOAD_FOLDER = 'nedlastninger'
+UPLOAD_FOLDER = 'static'
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
@@ -33,7 +33,7 @@ def uploaded_file(filename):
 @app.route('/predict', methods=['GET', 'POST'])
 def predicting():
   asdf = pred.prediction()
-  return asdf
+  return render_template("upload.html", result=asdf, imagesrc="nedlastninger/image.jpg")
 
 if __name__ == '__main__':
    app.run(debug = True)

@@ -16,7 +16,7 @@ def prediction():
     #data = mpimg.imread('/nedlastninger')
     ##imgplot = 
     # plt.imshow(img)
-    new_image = plt.imread("nedlastninger/image.jpg")
+    new_image = plt.imread("static/image.jpg")
     resized_image = resize(new_image, (32,32,3))
     predictions = model.predict(np.array([resized_image]))
 
