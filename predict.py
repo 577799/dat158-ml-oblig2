@@ -39,3 +39,4 @@ def prediction():
         #print(classification[list_index[i]], ':', round(predictions[0][list_index[i]] * 100, 2), '%')
 
     return  str(list_predictions)
+#asd
