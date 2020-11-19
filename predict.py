@@ -10,7 +10,7 @@ from tensorflow import keras
 
 #model = joblib.load('modeltest/saved_model.pb')
 #model = tf.saved_model.load('modeltest')
-model = keras.models.load_model("modeltest")
+model = keras.models.load_model("my_model")
 
 def prediction():
     #data = mpimg.imread('/nedlastninger')
